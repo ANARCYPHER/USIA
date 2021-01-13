@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+		
+			<div class="contact-us">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-12">
+							<div class="contact-us-form">
+								<form action="inc/sendemail.php" class="form-validation form-styl-two" autocomplete="off">
+									<div class="row">
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Your Name*" name="name"></div>
+										<div class="col-sm-6 col-12"><input type="email" placeholder="Email Address*" name="email"></div>
+									</div>
+									<input type="text" placeholder="Subject*" name="sub">
+									<textarea placeholder="Your Message" name="message"></textarea>
+									<input type="submit" value="SEnd Message">
+								</form>
+							</div> 
+						</div> 
+						<div class="col-lg-5 col-12">
+							<div class="contact-address">
+								<h2>Don’t Hesitate to contact with us.</br> We will protect you </h2>
+								<p>Email us for imiditate support </p>
+								<a href="#" class="tran3s">info@usia.gov</a>							
+									
+								<ul>
+									<li><a href="https://www.facebook.com/statedept" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="https://twitter.com/worldbank7" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.youtube.com/user/statevideo" class="tran3s"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.flickr.com/photos/statephotos/" class="tran3s"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+								</ul>
+							</div> 
+						</div> 
+					</div> 
+				</div> 
+				
+				<!-- Contact alert -->
+				<div class="alert-wrapper" id="alert-success">
+					<div id="success">
+						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="wrapper">
+			               	<p>Your message was sent successfully.</p>
+			             </div>
+			        </div>
+			    </div> 
+			    <div class="alert-wrapper" id="alert-error">
+			        <div id="error">
+			           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+			           	<div class="wrapper">
+			               	<p>Sorry!Something Went Wrong.</p>
+			            </div>
+			        </div>
+			    </div> 
+			</div> 
+
+			<!-- Google Map -->
+			<div class="map-canvas"></div>
+			
+
+
+
+			
+{% endblock %} 		

@@ -1,0 +1,248 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>United States Information Agency</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="{% static 'assets/images/fav-icon/icon.png' %}">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+
+			
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
+
+			
+
+			<!-- 
+			=============================================
+				USIA Header gov
+			============================================== 
+			-->
+			<header class="theme-main-header">
+				<div class="top-header">
+					<div class="container">
+						<div class="clearfix">
+							<div class="float-left">
+								<ul class="left-widget">
+									<li>
+										<ul class="social-icon clearfix">
+											<li><a href="https://www.facebook.com/statedept"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/worldbank7"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.youtube.com/user/statevideo"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.flickr.com/photos/statephotos/"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+										</ul>
+									</li>
+									<li>
+									<!--Option Up Navbar-->
+									</li>
+								</ul>
+							</div>
+							<div class="float-right">
+								<ul class="right-widget clearfix">
+									<li><a href=""><i class="fa fa-flag" aria-hidden="true"></i>An official website of the United States government</a></li>
+									<!--<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 010101101</a></li>-->
+									<!--<li class="quote"><a href="#">*****</a></li>-->
+								</ul>
+							</div>
+						</div> 
+					</div> 
+				</div> 
+				
+				<div class="main-menu-wrapper clearfix">
+					<div class="container clearfix">
+						<!-- Logo -->
+						<div class="logo float-left"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo/logo.png' %}" alt="Logo"></a></div>
+
+						<div class="right-widget float-right">
+					   		<ul>
+					   			<li class="search-option">
+					   				<div class="dropdown">
+					   					<!--<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+									     <form action="#" class="dropdown-menu">
+											<input type="text" Placeholder="Enter Your Search">
+											<button><i class="fa fa-search"></i></button>
+										</form>
+					   				</div>
+					   			</li>
+					   			
+					   		</ul>
+					   	</div> 
+
+						<!-- ============================ Theme Menu ========================= -->
+						<nav class="navbar-expand-lg float-right navbar-light" id="mega-menu-wrapper">
+					    	<button class="navbar-toggler float-right clearfix" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					    		<i class="flaticon-menu-options"></i>
+					    	</button>
+					    	<div class="collapse navbar-collapse clearfix" id="navbarNav">
+					    	  <ul class="navbar-nav nav">
+					    	  
+					    	    <li class="nav-item dropdown-holder">
+					    	    	<a class="nav-link" href="#">Department</a>
+					    	    	<ul class="sub-menu">
+					    	    		<li><a href="https://www.performance.gov/">Performance.gov</a></li>
+										<li><a href="https://www.fema.gov/">Fema.gov</a></li>
+										<li><a href="https://www.data.gov/">Data.gov</a></li>										
+										<li><a href="https://www.fcc.gov/">Fcc.gov</a></li>
+										<li><a href="index.html">Home</a></li>
+									</ul>
+					    	    </li>
+					    	    <!--<li class="nav-item dropdown-holder">
+					    	    	<a class="nav-link" href="#">Blog</a>
+					    	    	<ul class="sub-menu">
+										<li><a href="blog-grid.html">Blog grid</a></li>
+										<li><a href="blog-sidebar.html">Blog List With Sidebar</a></li>
+										<li><a href="blog-details.html">USA Department Details</a></li>
+									</ul>
+					    	    </li>-->
+					    	    <li class="nav-item dot-fix">
+					    	    	<a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+					    	    </li>
+					    	  </ul>
+					    	</div>
+						</nav>
+					</div> <!-- /.container -->
+				</div> <!-- /.main-menu-wrapper -->
+			</header> <!-- /.theme-main-header -->				
+
+{% block content %}
+
+{% endblock %}
+
+
+<footer class="theme-footer">
+<div class="container">
+    <div class="content-wrapper">
+ 
+
+        <div class="footer-bottom-wrapper row">
+            <div class="col-lg-3 col-sm-6 col-12 footer-logo">
+                <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo/logo.png' %}" alt="Logo"></a></div>
+                <a href="#" class="mail-address">info@usia.gov</a>
+                <!--<a href="#" class="phone-number">504. 987. 1295</a>-->
+            </div> <!-- /.footer-logo -->
+            <div class="col-lg-3 col-sm-6 col-12 footer-list">
+                <h4>About USA.gov</h4>
+                <ul>
+                    <li><a href="https://www.usa.gov/about">About Us and Site Notices</a></li>
+                    <li><a href="https://www.usa.gov/media">For the Media</a></li>
+                    <li><a href="https://www.usa.gov/developer">For Developers</a></li>
+                    <li><a href="https://www.usa.gov/site-issue-report-form">Report a Website Issue</a></li>
+                    <li><a href="https://www.usa.gov/#tpcs">All Topics and Services</a></li>
+                </ul>
+            </div> <!-- /.footer-list -->
+            <!--<div class="col-lg-3 col-sm-6 col-12 footer-list">
+                <h4>About USIA</h4>
+                <ul>
+                    <li><a href="about-us.html">About </a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="testimonial.html">News Release</a></li>-->
+                    <!--<li><a href="blog-grid.html">Blog</a></li>
+                </ul>
+            </div> 
+            <div class="col-lg-3 col-sm-6 col-12 footer-list">-->
+                <!--<h4>Become A Member</h4>-->
+                <!--<ul>
+                    <li><a href="#">Contributor</a></li>
+                    <li><a href="#">Union Member</a></li>
+                    <li><a href="#">Processing</a></li>
+                    <li><a href="#">Legal Action</a></li>
+                </ul>-->
+            </div> <!-- /.footer-list -->
+        </div> <!-- /.footer-bottom-wrapper -->
+
+        <div class="copyright-wrapper row">
+            <div class="col-md-6 col-sm-8 col-12">
+                <p>© Internet <a href="#">USA Department of Information</a> All rights reserved</p>
+            </div>
+            <div class="col-md-6 col-sm-4 col-12">
+                <ul>
+                    <li><a href="https://www.facebook.com/statedept"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/worldbank7"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <!--<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+                </ul>
+            </div>
+        </div> <!-- /.copyright-wrapper -->
+    </div>
+</div> <!-- /.container -->
+</footer> <!-- /.theme-footer -->
+
+
+
+
+<!-- Scroll Top Button -->
+<button class="scroll-top tran3s">
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</button>
+
+
+
+<!-- Optional JavaScript _____________________________  -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery -->
+<script src="{% static 'assets/vendor/jquery.2.2.3.min.js' %}"></script>
+<!-- Popper js -->
+<script src="{% static 'assets/vendor/popper.js/popper.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- Camera Slider -->
+<script src="{% static 'assets/vendor/Camera-master/scripts/jquery.mobile.customized.min.js' %}"></script>
+<script src="{% static 'assets/vendor/Camera-master/scripts/jquery.easing.1.3.js' %}"></script> 
+<script src="{% static 'assets/vendor/Camera-master/scripts/camera.min.js' %}"></script>
+<!-- Language Stitcher -->
+<script src="{% static 'assets/vendor/language-switcher/jquery.polyglot.language.switcher.js' %}"></script>
+<!-- Mega menu  -->
+<script src="{% static 'assets/vendor/bootstrap-mega-menu/js/menu.js' %}"></script>
+<!-- WOW js -->
+<script src="{% static 'assets/vendor/WOW-master/dist/wow.min.js' %}"></script>
+<!-- owl.carousel -->
+<script src="{% static 'assets/vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+<!-- js count to -->
+<script src="{% static 'assets/vendor/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery.countTo.js' %}"></script>
+<!-- Fancybox -->
+<script src="{% static 'assets/vendor/fancybox/dist/jquery.fancybox.min.js' %}"></script>
+
+
+
+<!-- Theme js -->
+<script src="{% static 'assets/js/theme.js' %}"></script>
+
+</div> <!-- /.main-page-wrapper -->
+</body>
+</html>
+
+
